@@ -1,5 +1,4 @@
-# Seahorse-Army
-# Linktree:sparkles:
+# Seahorse Army Linktree:sparkles:
 This is a free (and easy to use) alternative to linktree  
 http://www.alisa.social/Seahorse-Army/
 
