@@ -9,7 +9,11 @@ html {
     margin: 0;
     hight: 100%;
     
-    background-color: #1CABC3;
+    background: #1DACC3;
+    background: -webkit-linear-gradient(top, #1DACC3, #72B25B);
+    background: -moz-linear-gradient(top, #1DACC3, #72B25B);
+    background: linear-gradient(to bottom, #1DACC3, #72B25B);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
