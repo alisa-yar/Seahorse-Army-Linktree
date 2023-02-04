@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;600&display=swap');
 
 :root {
     --textColor: #FFFFFF;
-    --font: 'Karla', sans-serif;
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+ outline: none;
+ box-sizing: border-box;
 }
 
 html {
     margin: 0;
-    hight: 100%;
+    height: 100%;
     
-    background: #0196CE;
-    background: -webkit-linear-gradient(top, #0196CE, #85C170);
-    background: -moz-linear-gradient(top, #0196CE, #85C170);
-    background: linear-gradient(to bottom, #0196CE, #85C170);
-    
-    background-repeat: no-repeat;
+    background-image: url('seahorse.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 
     font-family: var(--font);
+    font-weight: 400;
     color: var(--textColor);
     scroll-behavior: smooth;
 }
@@ -32,6 +33,49 @@ body {
     padding: 0;
     height: fit-content;
     min-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: center;
+    box-sizing: border-box;
+  
+    color: var(--textColor);
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+    
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 10px; 
+  position: center;
+    
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.25);
+    
+  backdrop-filter: blur(15px);
+    
+  box-sizing: inherit;
+}
+
+.userName {   
+    color: var(--textColor);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px auto;
 }
 
 .description {
@@ -39,7 +83,8 @@ body {
     text-align: center;
     margin: 27px auto;
     margin-top: 10px;
-    width: 90%;
+    font-weight: 400;
+    weight: 90%;
     max-width: 500px;
 }
 
@@ -49,53 +94,45 @@ body {
     height: 130px;
     display: block;
     margin: 35px auto 25px;
-    border-radius: 0%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
-    
-}
-
-.userName {
-    color: var(--textColor);
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.25;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
 }
 
 .links {
     max-width: 675px;
-    width: auto;
+    width: 100%;
     display: block;
     margin: 27px auto;
+    font-weight: 400;
 }
 
 .link {
     position: relative;
     background-color: transparent;
     color: var(--textColor);
-    border: solid var(--textColor) 2px;
+    border-style: solid; 
+    border-color: var(--textColor);
+    border-width: 2px;
     border-radius: 10px;
-    font-size: 1rem;
     text-align: center;
     display: block;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    padding: 10px; 
+    padding: 10px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
     .link:hover {
-        background-color: var(--textColor);
+    color: var(--textColor);
     }
 }
 
 .link:active {
-    background-color: var(--textColor);
+    background-color: transparent;
 }
